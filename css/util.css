@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300;1,400;1,500;1,600;1,700;1,800;1,900;&display=swap');
+
+:root {
+    --clr-light: white;
+
+    --clr-primary: hsl(0, 100%, 74%);
+    --clr-secondary: hsl(154, 59%, 51%);
+
+    --clr-accent: hsl(248, 32%, 49%);
+
+    --clr-neutral1: hsl(249, 10%, 26%);
+    --clr-neutral2: hsl(249, 10%, 26%);
+
+    --width-1: 96%;
+
+    --fs-1: 16px;
+
+    --fw-1: 400;
+    --fw-2: 500;
+    --fw-3: 600;
+    --fw-4: 700;
+
+    --margin-0: 1.5em;
+    --margin-1: 3em;
+    --margin-2: 5em;
+
+    --padding-0: 1em;
+    --padding-1: 2em;
+    --padding-2: 4em;
+
+    --shadow-1: 0 6px 0 0 rgba(0, 0, 0, 0.196);
+    --border-rad: 10px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/bg-intro-mobile.png');
+    background-color: var(--clr-primary);
+    padding: var(--padding-2) var(--padding-1);
+    color: var(--clr-light);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    padding: .7em 2em;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,134 @@
+.title {
+    font-weight: 600;
+}
+
+.description {
+    margin-top: 2em;
+    margin-bottom: var(--margin-1);
+}
+
+.price {
+    font-weight: bold;
+}
+
+.price__cont {
+    --padding-1: 3em;
+    --padding-2: 1em;
+
+    display: inline-block;
+    padding: var(--padding-2) var(--padding-1);
+    background-color: var(--clr-accent);
+    border-radius: var(--border-rad);
+    margin-bottom: var(--margin-0);
+    box-shadow: var(--shadow-1);
+}
+
+.input__cont {
+    background-color: var(--clr-light);
+    padding: 1em;
+    border-radius: var(--border-rad);
+    box-shadow: var(--shadow-1);
+    border: .1px solid white;
+    margin-bottom: var(--margin-1);
+}
+
+.form>* {
+    /* padding: var(--padding-0) 0; */
+    width: var(--width-1);
+    margin: 15px 0;
+    border-radius: calc(var(--border-rad) - 4px);
+    position: relative;
+}
+
+.input__content {
+    width: 100%;
+    padding: var(--padding-0);
+    font-weight: bold;
+    color: var(--clr-neutral1);
+    border: 1px solid rgba(128, 128, 128, 0.358);
+}
+
+.warning {
+    color: var(--clr-primary);
+    padding: 0;
+    margin: 0;
+    font-size: 9px;
+    text-align: end;
+    margin: 4px 0;
+    font-style: italic;
+    font-weight: var(--fw-3);
+    /* opacity: 0; */
+}
+
+.terms__cont {
+    color: black;
+}
+
+.btn__claim {
+    display: inline-block;
+    background-color: var(--clr-secondary);
+    width: var(--width-1);
+    border-radius: calc(var(--border-rad) - 2px);
+    margin: 10px 0;
+    color: var(--clr-light);
+    font-weight: var(--fw-2);
+    text-transform: uppercase;
+    box-shadow: 0 4px 0 0 hsla(154, 86%, 27%, 0.614);
+    transition: background-color 200ms ease-in-out,
+        box-shadow 200ms ease-in-out;
+}
+
+.btn__claim:hover {
+    background-color: hsla(154, 59%, 51%, 0.687);
+    box-shadow: 0 4px 0 0 hsla(154, 86%, 27%, 0.463);
+}
+
+.terms {
+    width: 90%;
+    font-size: 11px;
+    font-weight: var(--fw-3);
+    color: rgba(128, 128, 128, 0.76);
+}
+
+@media(min-width: 600px) {
+    .layout__cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text__cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        margin-right: var(--margin-0);
+    }
+
+    .title {
+        font-size: 4vw;
+        font-weight: 600;
+    }
+
+    .description {
+        font-weight: var(--fw-2);
+    }
+
+
+}
+
+.red__border {
+    border: 2px solid var(--clr-primary);
+}
+
+.red__text {
+    color: var(--clr-primary)
+}
+
+.error__img {
+    position: absolute;
+    top: .6rem;
+    right: 1rem;
+    display: none;
+}
